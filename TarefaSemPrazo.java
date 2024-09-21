@@ -1,12 +1,12 @@
 public class TarefaSemPrazo extends Tarefa {
 
     public TarefaSemPrazo(String titulo, String descricao) {
-        super(titulo, descricao, null, 0); // Sem prazo definido
+        super(titulo, descricao, "", 0);
     }
 
     @Override
     public long calcularDiasRestantes() {
-        return -1; // Indicando que não há prazo
+        return -1;
     }
 
     @Override
@@ -15,3 +15,5 @@ public class TarefaSemPrazo extends Tarefa {
         System.out.println("Tipo: Sem Prazo");
     }
 }
+
+// @alanveloso

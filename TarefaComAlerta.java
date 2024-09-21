@@ -1,7 +1,7 @@
 public class TarefaComAlerta extends Tarefa implements Notificacao {
     public TarefaComAlerta(String titulo, String descricao, String prazo, int prioridade) {
         super(titulo, descricao, prazo, prioridade);
-        enviarNotificacao(); // Envia alerta ao criar a tarefa
+        enviarNotificacao();
     }
 
     @Override
@@ -15,3 +15,5 @@ public class TarefaComAlerta extends Tarefa implements Notificacao {
         System.out.println("Esta tarefa também envia alertas.");
     }
 }
+
+// @alanveloso
